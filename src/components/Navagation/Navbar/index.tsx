@@ -3,10 +3,10 @@ import Link from 'next/link';
 import { useState, useEffect, useContext } from 'react';
 import { KoHo } from 'next/font/google';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import Logo from '@public/Logo.webp';
 const koho = KoHo({ subsets: ['latin'], weight: '600' });
 
 import { buttonText, linkToPayment } from '@/utils/variables';
+import Logo from '@/components/UI/Logo';
 type Props = {};
 
 export default function Navbar(props: Props) {

@@ -15,7 +15,7 @@ const koho = KoHo({ subsets: ['latin'], weight: '600' });
 
 type Props = {};
 
-export default function Features(Props) {
+export default function Features() {
   return (
     <div className="p-mobile md:p-section">
       <h2
