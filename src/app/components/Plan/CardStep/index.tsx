@@ -19,12 +19,12 @@ export default function CardStep(props: Props) {
       className="flex flex-col items-center w-ful md:w-[30%] mb-8"
     >
       <h2
-        className={`${kohoBold.className} text-[62px] text-primary  leading-[50px]`}
+        className={`${kohoBold.className} text-[62px] text-burnt  leading-[50px]`}
       >
         {props.title}
       </h2>
       <h3
-        className={`${kohoBold.className} text-[28px] mb:text-[38px] text-secondary mb-4 md:mb-[40px]`}
+        className={`${kohoBold.className} text-[28px] mb:text-[38px] text-burnt mb-4 md:mb-[40px]`}
       >
         {props.subTitle}
       </h3>

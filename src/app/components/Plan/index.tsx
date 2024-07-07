@@ -12,7 +12,7 @@ export default function Plan(props: Props) {
   return (
     <section className="p-mobile md:p-section ">
       <h1
-        className={`${koho.className} text-title font-koho font-medium text-primary leading-title mb-[60px] `}
+        className={`${koho.className} text-title font-koho font-medium text-burnt leading-title mb-[60px] `}
       >
         3 passos para mudança
       </h1>
@@ -34,7 +34,9 @@ export default function Plan(props: Props) {
         />
       </div>
       <div>
-        <button className={`${koho2.className} btn btn-custon-1`}>
+        <button
+          className={`${koho2.className} btn btn-custon-1 bg-burnt text-white`}
+        >
           <a
             className="flex flex-row items-center"
             href={linkToPayment}

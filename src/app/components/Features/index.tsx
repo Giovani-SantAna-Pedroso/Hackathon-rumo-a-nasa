@@ -19,7 +19,7 @@ export default function Features() {
   return (
     <div className="p-mobile md:p-section">
       <h2
-        className={`${koho.className} text-[36px] font-koho font-medium text-primary leading-[26px] mb-[40px] `}
+        className={`${koho.className} text-[36px] font-koho font-medium text-burnt leading-[26px] mb-[40px] `}
       >
         Areas de atuação
       </h2>

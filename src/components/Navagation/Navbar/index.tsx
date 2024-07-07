@@ -1,8 +1,8 @@
 'use client';
 import Link from 'next/link';
 import { useState, useEffect, useContext } from 'react';
-import { KoHo } from 'next/font/google';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { KoHo } from 'next/font/google';
 const koho = KoHo({ subsets: ['latin'], weight: '600' });
 
 import { buttonText, linkToPayment } from '@/utils/variables';
@@ -58,7 +58,7 @@ export default function Navbar(props: Props) {
 
   return (
     <nav
-      className={`${koho.className} navbar bg-primary z-[20] fixed top-0 left-0  text-white`}
+      className={`${koho.className} text-blackText navbar bg-primary z-[20] fixed top-0 left-0  `}
     >
       <div className="navbar-start">
         <div className="dropdown ">

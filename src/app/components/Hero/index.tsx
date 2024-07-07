@@ -1,21 +1,21 @@
-import { AiOutlineWhatsApp } from "react-icons/ai";
-import Link from "next/link";
-import HerImg from "@public/hero-placerholder.png";
-import { KoHo, Encode_Sans } from "next/font/google";
+import { AiOutlineWhatsApp } from 'react-icons/ai';
+import Link from 'next/link';
+import HerImg from '@public/hero-placerholder.png';
+import { KoHo, Encode_Sans } from 'next/font/google';
 
-import { buttonText, linkToPayment } from "@/utils/variables";
-import Image from "next/image";
+import { buttonText, linkToPayment } from '@/utils/variables';
+import Image from 'next/image';
 
 type Props = {};
 
-const koho = KoHo({ subsets: ["latin"], weight: "400" });
-const koho2 = KoHo({ subsets: ["latin"], weight: "600" });
-const light = Encode_Sans({ subsets: ["latin"], weight: "300" });
-const bold = Encode_Sans({ subsets: ["latin"], weight: "600" });
+const koho = KoHo({ subsets: ['latin'], weight: '400' });
+const koho2 = KoHo({ subsets: ['latin'], weight: '600' });
+const light = Encode_Sans({ subsets: ['latin'], weight: '300' });
+const bold = Encode_Sans({ subsets: ['latin'], weight: '600' });
 
 export default function Hero(props: Props) {
   return (
-    <div className="hero min-h-screen bg-primary text-white">
+    <div className="hero text-blackText min-h-screen bg-primary md:p-section">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <Image
           src={HerImg}
@@ -38,11 +38,22 @@ export default function Hero(props: Props) {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <button className={`${koho2.className} btn btn-custon-1`}>
-            <Link href={"#"} target="">
-              Call to action
-            </Link>
-          </button>
+          <div>
+            <button
+              className={`${koho2.className} btn btn-custon-1 bg-burnt text-white mr-10`}
+            >
+              <Link href={'#'} target="">
+                Necessito ajuda
+              </Link>
+            </button>
+            <button
+              className={`${koho2.className} btn btn-custon-1 text-blackText bg-primary border-blackText`}
+            >
+              <Link href={'#'} target="">
+                Quero ser valuntario
+              </Link>
+            </button>
+          </div>
         </div>
       </div>
     </div>

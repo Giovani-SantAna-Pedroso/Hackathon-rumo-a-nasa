@@ -27,7 +27,7 @@ export default function Footer(props: Props) {
 
   return (
     <>
-      <footer className="footer text-white p-10 bg-primary text-base-content">
+      <footer className="footer  p-10 bg-primary text-blackText">
         <aside>
           <Image width={120} alt="logo da empresa" src={Logo} />
           <p>
@@ -62,7 +62,7 @@ export default function Footer(props: Props) {
           </p>
         </nav>
       </footer>
-      <footer className="footer text-white px-10 py-4 border-t bg-primary text-base-content border-base-300">
+      <footer className="footer px-10 py-4 border-t bg-primary text-blackText border-blackText">
         <nav className="md:place-self-center md:justify-self-end">
           <p>
             Site made by{' '}

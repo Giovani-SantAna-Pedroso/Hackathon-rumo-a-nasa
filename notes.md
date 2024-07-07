@@ -30,3 +30,14 @@ Populaçaõ de nova orleans decaiu 100.000 2020-2000 enrelação 480000 á abril
 # https://www.youtube.com/watch?v=TA1TNvCq5rE
 
 - Areas de periferia ainda são afetadas
+
+# Pessoas são relutantes em mudar de suas casas
+
+em 2008 houve um terremoto no condato de Benchua na china que destruiu a cidade o governo decidiu não ouvir os cidadoes e decidiram reconstruir a cidade do zero à 20km da original porem a ela se tornou um a cidade fantasma pois os moradores não quiseram deixar sua cidade natal
+
+# Telas com geo referencias
+
+
+
+
+
