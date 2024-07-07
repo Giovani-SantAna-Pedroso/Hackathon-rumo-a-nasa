@@ -12,15 +12,14 @@ type Props = {};
 // green to yellow
 export default function Navbar(props: Props) {
   let linksNav = [
-    { name: 'Quem somos', link: '/about', sub: [] },
-    { name: 'Quem somos', link: '/about', sub: [] },
+    { name: 'Home', link: '/', sub: [] },
+    { name: 'Dashboard', link: '/meuPerfil', sub: [] },
     // { name: "Psicologia forense", link: "/psicologia-forense"},
     // { name: "Mentoria para mulheres", link: "", sub:[
     //   {name:"Psicologia", link:""},
     //   {name:"Emprededorismo feminino", link:""},
     //   {name:"Para seu desenvolvimento", link:""},
     // ]},
-    { name: 'Entre em contato', link: '/contact', sub: [] },
     // { name: "Area do paciente", link: "/paciente" },
   ];
 
@@ -55,7 +54,7 @@ export default function Navbar(props: Props) {
 
   return (
     <nav
-      className={`${koho.className} text-blackText navbar bg-primary z-[20] fixed top-0 left-0  `}
+      className={`${koho.className} bg-gradient-to-r from-primary  via-green-500 to-secondary  text-blackText navbar  z-[20] fixed top-0 left-0  `}
     >
       <div className="navbar-start">
         <div className="dropdown ">
@@ -103,3 +102,6 @@ export default function Navbar(props: Props) {
     </nav>
   );
 }
+// call to action to the hero, banner
+//  pessoas fazendo um acordo, banco, computador
+// card no passos para a mudança

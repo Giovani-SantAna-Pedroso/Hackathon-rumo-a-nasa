@@ -4,6 +4,7 @@ import { AiOutlineWhatsApp } from 'react-icons/ai';
 import Link from 'next/link';
 import HerImg from '@public/hero-placerholder.png';
 import { KoHo, Encode_Sans } from 'next/font/google';
+import a from '@public/images/bussines.webp';
 import Image from 'next/image';
 
 const koho = KoHo({ subsets: ['latin'], weight: '400' });
@@ -13,16 +14,48 @@ const bold = Encode_Sans({ subsets: ['latin'], weight: '600' });
 
 export default function Hero() {
   return (
-    <div className="hero text-blackText min-h-screen bg-primary md:p-section">
+    <div
+      className="hero min-h-screen"
+      style={{
+        backgroundImage: 'url(images/bussines.webp)',
+      }}
+    >
+      <div className="hero-overlay bg-blackText bg-opacity-60"></div>
+      <div className="hero-content text-neutral-content text-center">
+        <div className="max-w-md">
+          <h1 className="mb-5 text-5xl font-bold">Auxílio sem empecilho</h1>
+          <p className="mb-5">
+            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
+            a id nisi.
+          </p>
+
+          <div>
+            <Link href="#">
+              <button
+                className={`${koho2.className} btn btn-custon-1 bg-burnt text-white mr-10`}
+              >
+                Quero fazer um emprestimo
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/*
+  
+    <div
+      className="hero text-blackText min-h-screen  md:p-section"
+      style={{
+        backgroundImage:
+          'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)',
+      }}
+    >
+      <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <Image
-          src={HerImg}
-          width={480}
-          height={480} // Adicionando a altura para evitar layout shift
-          alt="Image of the psichollogist"
-          className="max-h-[480px] rounded-md"
-          priority // Carregar esta imagem com prioridade
-        />
         <div>
           <h1
             className={`${koho.className} leading-[40px] md:leading-[60px] text-titleM md:text-title`}
@@ -38,24 +71,7 @@ export default function Hero() {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <div>
-            <Link href="#">
-              <button
-                className={`${koho2.className} btn btn-custon-1 bg-burnt text-white mr-10`}
-              >
-                Necessito ajuda
-              </button>
-            </Link>
-            <Link href="#">
-              <button
-                className={`${koho2.className} btn btn-custon-1 text-blackText bg-primary border-blackText`}
-              >
-                Quero ser voluntario
-              </button>
-            </Link>
-          </div>
         </div>
       </div>
     </div>
-  );
-}
+  */

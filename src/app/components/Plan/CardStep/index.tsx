@@ -16,7 +16,7 @@ export default function CardStep(props: Props) {
       initial={{ y: 48, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1, transition: { duration: 0.4 } }}
       viewport={{ once: true }}
-      className="flex flex-col items-center w-ful md:w-[30%] mb-8"
+      className="flex border p-2 rounded border-burnt flex-col items-center w-ful md:w-[30%] mb-8"
     >
       <h2
         className={`${kohoBold.className} text-[62px] text-burnt  leading-[50px]`}
@@ -28,7 +28,7 @@ export default function CardStep(props: Props) {
       >
         {props.subTitle}
       </h3>
-      <p className=" text-[20px] text-justify">{props.text}</p>
+      <p className=" text-[20px] ">{props.text}</p>
     </motion.div>
   );
 }

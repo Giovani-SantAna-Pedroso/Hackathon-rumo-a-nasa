@@ -24,16 +24,12 @@ export default function CTA(props: Props) {
       </h1>
       <div className="flex flex-col-reverse md:flex-row justify-between">
         <div>
-          <p className="md:max-w-[34vw] text-text md:text-textM text-justify">
-            <span className="md:hiddenn"> &nbsp; &nbsp; &nbsp; </span>
-            Você está enfrentando dificuldades emocionais e precisa de ajuda
-            para superá-las? Não se preocupe, estou aqui para ajudas. Sou uma
-            psicóloga experiente, dedicada a auxiliar meus pacientes a encontrar
-            o equilíbrio emocional e a lidar com os desafios da vida. Com
-            abordagem humanizada e baseada em evidências, ofereço um ambiente
-            seguro e confidencial para explorar seus sentimentos e preocupações.
-            Agende agora sua primeira sessão e comece sua jornada para uma vida
-            mais saudável e feliz.
+          <p className="md:max-w-[34vw] text-text md:text-textM ">
+            Descubra a ponte para a recuperação e crescimento das PMEs! Nossa
+            solução tecnológica inovadora transforma o acesso ao crédito,
+            oferecendo as ferramentas e suporte necessários para que
+            empreendedores superem momentos críticos e reergam seus negócios.
+            Estamos prontos para ajudar você a alcançar o sucesso!
           </p>
         </div>
         <div className="">

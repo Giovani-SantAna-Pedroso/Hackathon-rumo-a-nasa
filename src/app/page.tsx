@@ -17,12 +17,12 @@ export default function Home() {
     <div className={`${lato.className}`}>
       <Hero />
       {/* <Video /> */}
-      <Presentation />
+      {/* <Presentation /> */}
       <Plan />
       {/*   <Cleide2 /> */}
       <OMV />
       <Features />
-      <Reviews />
+      {/* <Reviews /> */}
       {/* </SectionWImage> */}
       <FAQ />
       <CTA />

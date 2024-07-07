@@ -1,9 +1,10 @@
 'use client';
 import React from 'react';
-import img0 from '@public/images/personagem/0.png';
-import img1 from '@public/images/personagem/1.png';
-import img2 from '@public/images/personagem/2.png';
-import img3 from '@public/images/personagem/3.png';
+import img0 from '@public/images/personagem/a2-removebg-preview.png';
+import img1 from '@public/images/personagem/a2-removebg-preview.png';
+import img2 from '@public/images/personagem/a2-removebg-preview.png';
+import img3 from '@public/images/personagem/a2-removebg-preview.png';
+import img4 from '@public/images/personagem/a2-removebg-preview.png';
 import Image from 'next/image';
 import { KoHo } from 'next/font/google';
 import { useRouter } from 'next/navigation';
@@ -69,14 +70,14 @@ function Dashboard() {
       <div className=" border border-secondary p-2 rounded  w-[80%] md:w-[60%]">
         <div className="relative border-2 border-blackText text-white p-4 rounded-lg">
           {/* Pergunta */}
-          <h1 className="text-[14px] text-secondary">
-            {perguntas[step].section}
-          </h1>
-          <h2
+          {/* <h1 className="text-[14px] text-secondary"> */}
+          {/*   {perguntas[step].section} */}
+          {/* </h1> */}
+          <h1
             className={`${koho.className} text-[24px]  font-medium text-primary  `}
           >
             {perguntas[step].titulo}
-          </h2>
+          </h1>
           <p className="text-blackText">{perguntas[step].question}</p>
           <div className="absolute left-4 bottom-[-10px] w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-blackText"></div>
         </div>
@@ -87,7 +88,7 @@ function Dashboard() {
           onChange={handleInput}
           value={ans[step]}
           placeholder="Type here"
-          className="input input-bordered w-full my-4 "
+          className="input input-bordered w-full mb-4 "
         />
         <div className="flex justify-between ">
           <button

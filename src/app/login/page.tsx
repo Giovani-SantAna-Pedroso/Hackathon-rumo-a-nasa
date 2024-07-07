@@ -9,8 +9,8 @@ import { AiOutlineLoading3Quarters } from 'react-icons/ai'; // Importando um íc
 const koho = KoHo({ subsets: ['latin'], weight: '600' });
 
 function Login() {
-  const [password, setPassword] = useState('');
-  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('osascoecidadetop');
+  const [email, setEmail] = useState('johndoe@email.com');
   const [isLoading, setIsLoading] = useState(false);
 
   const router = useRouter();

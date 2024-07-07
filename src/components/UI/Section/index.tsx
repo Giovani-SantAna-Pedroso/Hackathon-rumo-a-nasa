@@ -23,7 +23,7 @@ function Section(props: Props) {
           title={props.title}
           invert="no"
         />
-        <div className="text-justify  text-textM  md:max-w-[40vw]  mb-[20px] ">
+        <div className="  text-textM  md:max-w-[40vw]  mb-[20px] ">
           <p>{props.children}</p>
         </div>
       </div>

@@ -12,7 +12,7 @@ export default function Plan(props: Props) {
   return (
     <section className="p-mobile md:p-section ">
       <h1
-        className={`${koho.className} text-title font-koho font-medium text-burnt leading-title mb-[60px] `}
+        className={`${koho.className} text-center text-title font-koho font-medium text-burnt leading-title mb-[60px] `}
       >
         3 passos para mudança
       </h1>
@@ -33,7 +33,7 @@ export default function Plan(props: Props) {
           text="É um processo cuidadoso onde cada passo será uma reconstrução que vai te propiciar novos olhares, emoções e comportamentos. Abra-se para o novo, viva o presente momento e prepare-se para o futuro moderadamente. Olhe atentamente para os passos que você já deu, perceba que hoje você vai estar mais perto do que ontem. Estarei no seu suporte!"
         />
       </div>
-      <div>
+      <div className="flex justify-center">
         <button
           className={`${koho2.className} btn btn-custon-1 bg-burnt text-white`}
         >
