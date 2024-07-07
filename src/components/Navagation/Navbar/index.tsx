@@ -13,7 +13,7 @@ type Props = {};
 export default function Navbar(props: Props) {
   let linksNav = [
     { name: 'Quem somos', link: '/about', sub: [] },
-    { name: 'Quem somos', link: '/about', sub: [] },
+   
     // { name: "Psicologia forense", link: "/psicologia-forense"},
     // { name: "Mentoria para mulheres", link: "", sub:[
     //   {name:"Psicologia", link:""},
