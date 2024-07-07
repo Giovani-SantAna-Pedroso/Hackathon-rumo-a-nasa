@@ -1,12 +1,19 @@
-import"./meuperfil.css"
+'use client';
 
-const meuPerfil=()=>{
+import React from 'react';
+import { BsDatabaseDash } from "react-icons/bs";
+import { Dashdados } from './../components/dataDash/Dash';
+import './meuperfil.css';
 
-    return(
-        <div className="meuPerfil-atual">
-            teste
+const MeuPerfil = () => {
+  return (
+    <div className="meuPerfil-atual">
+      <div className="valor-tomado">
+        <h1>Valor tomado <strong> R$ 53.524,10</strong></h1>
+        <Dashdados />
+      </div>
+    </div>
+  );
+};
 
-        </div>
-    )
-}
-export default meuPerfil
+export default MeuPerfil;

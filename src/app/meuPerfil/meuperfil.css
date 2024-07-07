@@ -1,3 +1,12 @@
 .meuPerfil-atual{
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.valor-tomado{
+    display: flex;
+    flex-direction: column;
+   gap: 50px;
 }
