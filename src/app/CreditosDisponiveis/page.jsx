@@ -38,7 +38,7 @@ function CreditosDisponiveis() {
       <div className="content">
         <header className="content-header">
           Melhor proposta para você{' '}
-          <p onClick={handlerPerfil} className="meuPerfil">
+          <p  className="meuPerfil">
             {isLoading ? 'loading...' : 'Meu perfil'}
           </p>
         </header>
