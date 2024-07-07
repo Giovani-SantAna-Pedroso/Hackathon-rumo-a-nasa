@@ -9,6 +9,7 @@ import { buttonText, linkToPayment } from '@/utils/variables';
 import Logo from '@/components/UI/Logo';
 type Props = {};
 
+// green to yellow
 export default function Navbar(props: Props) {
   let linksNav = [
     { name: 'Quem somos', link: '/about', sub: [] },
