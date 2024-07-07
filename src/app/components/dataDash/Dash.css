@@ -17,3 +17,12 @@
       }
     
   }
+  @media(max-width:500px) {
+    .dashboard-container {
+        width: 100%;
+        width: 300px;
+        height: auto;
+        margin: 0 auto; /* Centraliza o dashboard horizontalmente */
+      }
+    
+  }

@@ -12,43 +12,37 @@ type Props = {};
 // green to yellow
 export default function Navbar(props: Props) {
   let linksNav = [
-<<<<<<< HEAD
-    { name: 'Home', link: '/', sub: [] },
-    { name: 'Dashboard', link: '/meuPerfil', sub: [] },
-=======
     { name: 'Quem somos', link: '/about', sub: [] },
-   
->>>>>>> 36d01e60f04187acd3b008a38daffbb0c710fa64
     // { name: "Psicologia forense", link: "/psicologia-forense"},
     // { name: "Mentoria para mulheres", link: "", sub:[
     //   {name:"Psicologia", link:""},
     //   {name:"Emprededorismo feminino", link:""},
     //   {name:"Para seu desenvolvimento", link:""},
     // ]},
+    { name: 'Entre em contato', link: '/contact', sub: [] },
     // { name: "Area do paciente", link: "/paciente" },
   ];
 
   function getItemsNav() {
     return linksNav.map((link) => {
-      if (link.sub.length == 0) {
+      if (link.sub.length === 0) {
         return (
           <li key={link.link}>
             <Link href={link.link}>{link.name}</Link>
           </li>
         );
       } else {
+        // Descomente esta parte se precisar de sublinks no futuro
         // return (
-        //   <li key={`link.link`}>
+        //   <li key={link.link}>
         //     <details>
         //       <summary>{link.name}</summary>
-        //       <ul className="bg-primary mt-2 p-2 border-white border ">
-        //         {link.sub.map((subLink) => {
-        //           return (
-        //             <li key={`sublink${subLink.name}`}>
-        //               <Link href={subLink.link}>{subLink.name}</Link>
-        //             </li>
-        //           );
-        //         })}
+        //       <ul className="bg-primary mt-2 p-2 border-white border">
+        //         {link.sub.map((subLink) => (
+        //           <li key={subLink.name}>
+        //             <Link href={subLink.link}>{subLink.name}</Link>
+        //           </li>
+        //         ))}
         //       </ul>
         //     </details>
         //   </li>
@@ -59,10 +53,10 @@ export default function Navbar(props: Props) {
 
   return (
     <nav
-      className={`${koho.className} bg-gradient-to-r from-primary  via-green-500 to-secondary  text-blackText navbar  z-[20] fixed top-0 left-0  `}
+      className={`${koho.className} text-blackText navbar bg-primary z-[20] fixed top-0 left-0`}
     >
       <div className="navbar-start">
-        <div className="dropdown ">
+        <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +75,7 @@ export default function Navbar(props: Props) {
           </label>
           <ul
             tabIndex={0}
-            className=" bg-primary menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52"
+            className="bg-primary menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52"
           >
             {getItemsNav()}
           </ul>
@@ -96,9 +90,9 @@ export default function Navbar(props: Props) {
           {getItemsNav()}
         </ul>
         <a
-          className={`${koho.className} btn btn-small btn-custon-1 `}
+          className={`${koho.className} btn btn-small btn-custon-1`}
           target=""
-          href={'login'}
+          href="login"
         >
           {/* {buttonText} */}
           Login
@@ -107,6 +101,3 @@ export default function Navbar(props: Props) {
     </nav>
   );
 }
-// call to action to the hero, banner
-//  pessoas fazendo um acordo, banco, computador
-// card no passos para a mudança
