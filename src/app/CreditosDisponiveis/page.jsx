@@ -34,11 +34,6 @@ function CreditosDisponiveis() {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
 
-<<<<<<< HEAD
-
-
-
-=======
   const handlerPerfil = async () => {
     setIsLoading(true);
     try {
@@ -51,7 +46,6 @@ function CreditosDisponiveis() {
       setIsLoading(false);
     }
   };
->>>>>>> fce97186badfa2694826784f5eec271bc6650cb0
 
   return (
     <main className="conteudo-principal">
