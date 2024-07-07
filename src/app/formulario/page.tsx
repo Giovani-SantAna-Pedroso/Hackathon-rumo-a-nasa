@@ -14,30 +14,14 @@ const koho2 = KoHo({ subsets: ['latin'], weight: '600' });
 
 function Dashboard() {
   const perguntas = perguntasTest;
-  const imgs = [
-    img0,
-    img1,
-    img2,
-    img3,
-    img0,
-    img1,
-    img2,
-    img3,
-    img0,
-    img1,
-    img2,
-    img3,
-    img0,
-    img1,
-    img2,
-    img3,
-    img0,
-    img1,
-    img2,
-    img3,
-  ];
+  const imgs = [img0, img1, img2, img3];
   const [step, setStep] = React.useState(0);
-  const [ans, setAns] = React.useState(Array(perguntas.length).fill(''));
+  const [ans, setAns] = React.useState([
+    'João da Silva',
+    'Panificadora Dois Irmão',
+    'Alimentação',
+    'Rio Grande do Sul',
+  ]);
   const router = useRouter();
   const handleInput = (e: any) => {
     const cpAns = [...ans];

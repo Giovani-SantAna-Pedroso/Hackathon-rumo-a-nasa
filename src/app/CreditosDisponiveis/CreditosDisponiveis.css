@@ -34,6 +34,23 @@
     
 }
 
+@media (max-width:1043PX) {
+    .conteudo-principal{
+        height: 100vh;
+    }
+.conteudo-principal .content{
+width: 600px;
+  
+}
+}
+@media (max-width:600PX) {
+    
+.conteudo-principal .content{
+width: 500px;
+  
+}
+}
+
 .conteudo-principal .content-header{
     display: flex;
     border-radius: 5px;

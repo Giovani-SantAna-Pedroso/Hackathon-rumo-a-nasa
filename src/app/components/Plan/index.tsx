@@ -5,6 +5,7 @@ const koho = KoHo({ subsets: ['latin'], weight: '600' });
 const koho2 = KoHo({ subsets: ['latin'], weight: '600' });
 
 import { buttonText } from '@/utils/variables';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -34,17 +35,13 @@ export default function Plan(props: Props) {
         />
       </div>
       <div className="flex justify-center">
-        <button
-          className={`${koho2.className} btn btn-custon-1 bg-burnt text-white`}
-        >
-          <a
-            className="flex flex-row items-center"
-            href={linkToPayment}
-            target="_blank"
+        <Link href="/login">
+          <button
+            className={`${koho2.className} btn btn-custon-1 bg-burnt text-white mr-10`}
           >
-            <p className="text-[20px] font-bold">{buttonText}</p>
-          </a>
-        </button>
+            Quero fazer um emprestimo
+          </button>
+        </Link>
       </div>
     </section>
   );
