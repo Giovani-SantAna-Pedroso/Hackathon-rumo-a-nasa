@@ -1,20 +1,32 @@
 'use client';
-import React from 'react';
+import { useState } from 'react';
 import { KoHo } from 'next/font/google';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+
 const koho = KoHo({ subsets: ['latin'], weight: '600' });
 
 function Login() {
+  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+
   const router = useRouter();
+
   const handleLogin = () => {
-    router.push('dashboard');
+    setIsLoading(true);
+    // Simulate a delay for loading (e.g., API call)
+    setTimeout(() => {
+      router.push('dashboard');
+      setIsLoading(false);
+    }, 2000);
   };
+
   return (
     <div className="min-h-screen flex justify-center items-center">
-      <div className="border-secondary border p-4 rounded-md">
+      <form className="border-secondary border p-4 rounded-md">
         <h1
-          className={`${koho.className} text-title font-koho font-medium text-burnt leading-title mb-[60px] `}
+          className={`${koho.className} text-title font-koho font-medium text-burnt leading-title mb-[60px]`}
         >
           Login
         </h1>
@@ -29,7 +41,14 @@ function Login() {
               <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
               <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
             </svg>
-            <input type="text" className="grow" placeholder="Email" />
+            <input
+              type="text"
+              className="grow"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
           </label>
           <label className="input input-bordered mb-4 flex items-center gap-2">
             <svg
@@ -44,36 +63,34 @@ function Login() {
                 clipRule="evenodd"
               />
             </svg>
-            <input type="password" className="grow" value="password" />
+            <input
+              type="password"
+              className="grow"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
           </label>
           <button
+            type="button"
             onClick={handleLogin}
             className="btn bg-secondary text-white p-2 rounded-md w-full"
           >
-            Login
+            {isLoading ? 'Loading...' : 'Login'}
           </button>
           <div className="flex flex-col">
-            <Link
-              href="#"
-              className=" mt-4 no-underline btn-link  justify-start"
-            >
+            <Link href="#" className="mt-4 no-underline btn-link justify-start">
               Esqueci minha senha
             </Link>
-            <Link
-              href="#"
-              className=" mt-4 no-underline btn-link  justify-start"
-            >
+            <Link href="#" className="mt-4 no-underline btn-link justify-start">
               Criar nova conta
             </Link>
-            <Link
-              href="#"
-              className=" mt-4 no-underline btn-link  justify-start"
-            >
+            <Link href="#" className="mt-4 no-underline btn-link justify-start">
               Fale conoso
             </Link>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   );
 }
