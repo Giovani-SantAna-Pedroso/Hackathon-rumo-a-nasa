@@ -116,7 +116,7 @@ export const perguntas = [
 export const perguntasTest = [
   {
     section: 'Informações Básicas',
-    titulo: 'Nome Completo',
+    titulo: 'Vamos criar seu perfil personalizado - Nome Completo',
     question:
       'Precisamos saber quem você é para poder oferecer uma ajuda personalizada',
   },
