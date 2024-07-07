@@ -44,7 +44,7 @@ const data = {
 
 export const Dashdados = () => (
   <div className="dashboard-container">
-    <h2>Exemplo de Gráfico</h2>
+
     <Line data={data} />
   </div>
 );

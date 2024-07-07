@@ -3,10 +3,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .valor-tomado{
     display: flex;
     flex-direction: column;
    gap: 50px;
+}
+.back-page{
+    padding: 15px;
+    background-color: #FFCB47;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
 }

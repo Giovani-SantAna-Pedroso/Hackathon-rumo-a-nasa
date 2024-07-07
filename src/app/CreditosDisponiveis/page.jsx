@@ -17,11 +17,7 @@ function CreditosDisponiveis() {
 
 
 
-    const handlerselection = (e)=>{
-        
-        const  valorclicado = e.target
-        console.log(valorclicado)
-    }
+
 
     const handlerPerfil = async () => {
         setIsLoading(true);
