@@ -33,22 +33,22 @@ export default function Navbar(props: Props) {
           </li>
         );
       } else {
-        return (
-          <li key={`link.link`}>
-            <details>
-              <summary>{link.name}</summary>
-              <ul className="bg-primary mt-2 p-2 border-white border ">
-                {link.sub.map((subLink) => {
-                  return (
-                    <li key={`sublink${subLink.name}`}>
-                      <Link href={subLink.link}>{subLink.name}</Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            </details>
-          </li>
-        );
+        // return (
+        //   <li key={`link.link`}>
+        //     <details>
+        //       <summary>{link.name}</summary>
+        //       <ul className="bg-primary mt-2 p-2 border-white border ">
+        //         {link.sub.map((subLink) => {
+        //           return (
+        //             <li key={`sublink${subLink.name}`}>
+        //               <Link href={subLink.link}>{subLink.name}</Link>
+        //             </li>
+        //           );
+        //         })}
+        //       </ul>
+        //     </details>
+        //   </li>
+        // );
       }
     });
   }
