@@ -1,6 +1,6 @@
 'use client';
 import { AiOutlineWhatsApp, AiOutlineMail } from 'react-icons/ai';
-import Logo from '@public/Logo.webp';
+import Logo from '@public/images/logo.webp';
 import Link from 'next/link';
 import { KoHo } from 'next/font/google';
 import Image from 'next/image';

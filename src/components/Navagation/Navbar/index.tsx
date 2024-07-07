@@ -11,18 +11,14 @@ type Props = {};
 
 export default function Navbar(props: Props) {
   let linksNav = [
-    { name: 'Me conheça', link: '/about', sub: [] },
+    { name: 'Quem somos', link: '/about', sub: [] },
+    { name: 'Quem somos', link: '/about', sub: [] },
     // { name: "Psicologia forense", link: "/psicologia-forense"},
     // { name: "Mentoria para mulheres", link: "", sub:[
     //   {name:"Psicologia", link:""},
     //   {name:"Emprededorismo feminino", link:""},
     //   {name:"Para seu desenvolvimento", link:""},
     // ]},
-    {
-      name: 'Na justiça',
-      link: '/help',
-      sub: [{ name: 'Psicologia forense', link: '/psicologia-forense' }],
-    },
     { name: 'Entre em contato', link: '/contact', sub: [] },
     // { name: "Area do paciente", link: "/paciente" },
   ];
@@ -96,10 +92,11 @@ export default function Navbar(props: Props) {
         </ul>
         <a
           className={`${koho.className} btn btn-small btn-custon-1 `}
-          target="_blank"
-          href={linkToPayment}
+          target=""
+          href={'login'}
         >
-          {buttonText}
+          {/* {buttonText} */}
+          Login
         </a>
       </div>
     </nav>
