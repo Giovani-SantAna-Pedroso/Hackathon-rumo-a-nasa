@@ -1,8 +1,10 @@
 'use client';
+
 import { useState } from 'react';
 import { KoHo } from 'next/font/google';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { AiOutlineLoading3Quarters } from 'react-icons/ai'; // Importando um ícone de loading
 
 const koho = KoHo({ subsets: ['latin'], weight: '600' });
 
@@ -13,13 +15,18 @@ function Login() {
 
   const router = useRouter();
 
-  const handleLogin = () => {
+  const handleLogin = async () => {
     setIsLoading(true);
-    // Simulate a delay for loading (e.g., API call)
-    setTimeout(() => {
+    try {
+      // Simular chamada à API de login
+      await new Promise((resolve) => setTimeout(resolve, 3000)); // Substitua isso por sua chamada real à API
       router.push('dashboard');
+    } catch (error) {
+      console.error('Login failed:', error);
+      // Trate o erro de login aqui, se necessário
+    } finally {
       setIsLoading(false);
-    }, 2000);
+    }
   };
 
   return (
@@ -74,9 +81,14 @@ function Login() {
           <button
             type="button"
             onClick={handleLogin}
-            className="btn bg-secondary text-white p-2 rounded-md w-full"
+            className="btn bg-secondary text-white p-2 rounded-md w-full flex justify-center items-center"
+            disabled={isLoading} // Desabilita o botão enquanto está carregando
           >
-            {isLoading ? 'Loading...' : 'Login'}
+            {isLoading ? (
+              <AiOutlineLoading3Quarters className="animate-spin mr-2" />
+            ) : (
+              'Login'
+            )}
           </button>
           <div className="flex flex-col">
             <Link href="#" className="mt-4 no-underline btn-link justify-start">
