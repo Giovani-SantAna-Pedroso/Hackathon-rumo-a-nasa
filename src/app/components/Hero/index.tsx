@@ -25,13 +25,11 @@ export default function Hero() {
         <div className="max-w-md">
           <h1 className="mb-5 text-5xl font-bold">Auxílio sem empecilho</h1>
           <p className="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+Você enfrenta desafios econômicos que comprometem a recuperação. Nós facilitamos o acesso ao crédito para PMEs, oferecendo o conhecimento e os recursos essenciais para você reconstruir e prosperar. Junte-se a nós e reergue seu empreendimento com confiança!
           </p>
 
           <div>
-            <Link href="#">
+            <Link href="/login">
               <button
                 className={`${koho2.className} btn btn-custon-1 bg-burnt text-white mr-10`}
               >

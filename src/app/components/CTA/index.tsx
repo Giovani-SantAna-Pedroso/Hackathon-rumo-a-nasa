@@ -3,12 +3,14 @@ import BlobCTA from '../../../public/BlobCTA.svg';
  * import CTAImg from "../../../public/blobCta.png"; */
 // import { useContext } from "react";
 // import { contextHome } from "@/storage/home";
-import CTAImage from '@public/CTA.jpg';
+import CTAImage from '@public/images/hope.webp';
 import { KoHo } from 'next/font/google';
+const koho2 = KoHo({ subsets: ['latin'], weight: '600' });
 const koho = KoHo({ subsets: ['latin'], weight: '600' });
 
 import { buttonText, linkToPayment } from '@/utils/variables';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -35,23 +37,21 @@ export default function CTA(props: Props) {
         <div className="">
           <Image
             src={CTAImage}
-            width={515}
-            height={631}
-            className="w-full my-[50px]"
+            width={415}
+            height={431}
+            className="w-full rounded "
             alt="Mudança"
           />
         </div>
       </div>
       <div>
-        <button className="btn  btn-custon-1">
-          <a
-            className="flex flex-row items-center"
-            href={linkToPayment}
-            target="_blank"
+        <Link href="/login">
+          <button
+            className={`${koho2.className} btn btn-custon-1 bg-burnt text-white mr-10`}
           >
-            <p className="text-[20px] font-bold  ">{buttonText}</p>
-          </a>
-        </button>
+            Quero fazer um emprestimo
+          </button>
+        </Link>
       </div>
     </section>
   );

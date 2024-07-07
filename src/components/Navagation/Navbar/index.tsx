@@ -12,14 +12,15 @@ type Props = {};
 // green to yellow
 export default function Navbar(props: Props) {
   let linksNav = [
-    { name: 'Quem somos', link: '/about', sub: [] },
+    { name: 'Home', link: '/', sub: [] },
+    { name: 'Meu Perfil', link: '/CreditosDisponiveis', sub: [] },
+    { name: 'Dashboard', link: '/meuPerfil', sub: [] },
     // { name: "Psicologia forense", link: "/psicologia-forense"},
     // { name: "Mentoria para mulheres", link: "", sub:[
     //   {name:"Psicologia", link:""},
     //   {name:"Emprededorismo feminino", link:""},
     //   {name:"Para seu desenvolvimento", link:""},
     // ]},
-    { name: 'Entre em contato', link: '/contact', sub: [] },
     // { name: "Area do paciente", link: "/paciente" },
   ];
 
