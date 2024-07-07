@@ -14,32 +14,24 @@ export default function FAQ(props: Props) {
       </h1>
       <div>
         <CardQuestion
-          question="Question x"
-          answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque viverra mauris in aliquam sem fringilla. Etiam non quam lacus suspendisse faucibus. "
+          question="Qual é a visão da CreditaRS?"
+          answer="Simplificar e agilizar o processo de obtenção de crédito bancário para PMEs usando análise de dados​"
         />
         <CardQuestion
-          question="Question x"
-          answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque viverra mauris in aliquam sem fringilla. Etiam non quam lacus suspendisse faucibus. "
+          question="Qual é a missão da CreditaRS"
+          answer="Facilitar o acesso a financiamentos adequados para PMEs, promovendo o crescimento sustentável e a estabilidade financeira"
         />
         <CardQuestion
-          question="Question x"
-          answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque viverra mauris in aliquam sem fringilla. Etiam non quam lacus suspendisse faucibus. "
+          question="Quais são as funcionalidades essenciais do MVP"
+          answer="Avaliação automática de crédito usando IA, correspondência com instituições financeiras e geração de um dashboard básico com relatórios de fluxo de caixa e demonstração de resultados"
         />
         <CardQuestion
-          question="Question x"
-          answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque viverra mauris in aliquam sem fringilla. Etiam non quam lacus suspendisse faucibus. "
+          question="Qual é a proposta de valor da CreditaRS"
+          answer="Rápida avaliação de crédito, conexão com instituições financeiras adequadas, e dashboards personalizados"
         />
         <CardQuestion
-          question="Question x"
-          answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque viverra mauris in aliquam sem fringilla. Etiam non quam lacus suspendisse faucibus. "
-        />
-        <CardQuestion
-          question="Question x"
-          answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque viverra mauris in aliquam sem fringilla. Etiam non quam lacus suspendisse faucibus. "
-        />
-        <CardQuestion
-          question="Question x"
-          answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque viverra mauris in aliquam sem fringilla. Etiam non quam lacus suspendisse faucibus. "
+          question="Qual modelo de receita é utilizado?"
+          answer="Freemium"
         />
       </div>
     </section>

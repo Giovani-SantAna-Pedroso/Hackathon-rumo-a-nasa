@@ -12,13 +12,9 @@ type Props = {};
 // green to yellow
 export default function Navbar(props: Props) {
   let linksNav = [
-<<<<<<< HEAD
     { name: 'Home', link: '/', sub: [] },
+    { name: 'Meu Perfil', link: '/CreditosDisponiveis', sub: [] },
     { name: 'Dashboard', link: '/meuPerfil', sub: [] },
-=======
-    { name: 'Quem somos', link: '/about', sub: [] },
-   
->>>>>>> 36d01e60f04187acd3b008a38daffbb0c710fa64
     // { name: "Psicologia forense", link: "/psicologia-forense"},
     // { name: "Mentoria para mulheres", link: "", sub:[
     //   {name:"Psicologia", link:""},

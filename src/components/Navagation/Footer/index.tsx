@@ -10,17 +10,19 @@ const koho = KoHo({ subsets: ['latin'], weight: '600' });
 type Props = {};
 // Some variables to change the content of the pagae
 const company = {
-  name: 'A generic company',
-  philosoph: 'Put here a generic linkedIn post',
+  name: 'CreditaRs',
+  philosoph: 'Auxílio sem empecilho',
 };
 const pages = [
-  { name: 'Page 1', link: '#' },
-  { name: 'Page 2', link: '#' },
-  { name: 'Page 3', link: '#' },
-  { name: 'Page 4', link: '#' },
+  { name: 'Home', link: '/' },
+  { name: 'Dashboard', link: '/meuPerfil' },
+  { name: 'Login', link: '/login' },
 ];
-const contactInfo = { email: 'EMAL@EMAIL.COM', tel: '(00)00000-0000' };
-const creator = { name: 'NAME OF THE GROUP', link: '#' };
+const contactInfo = { email: 'creditars@email.com', tel: '(00)00000-0000' };
+const creator = {
+  name: 'Giovani, Welme, Tarug, Vieira',
+  link: 'https://github.com/Giovani-Pedroso/Hackathon-rumo-a-nasa',
+};
 
 export default function Footer(props: Props) {
   const year = new Date().getFullYear();

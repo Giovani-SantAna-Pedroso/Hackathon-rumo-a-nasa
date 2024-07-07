@@ -3,7 +3,7 @@ import BlobCTA from '../../../public/BlobCTA.svg';
  * import CTAImg from "../../../public/blobCta.png"; */
 // import { useContext } from "react";
 // import { contextHome } from "@/storage/home";
-import CTAImage from '@public/CTA.jpg';
+import CTAImage from '@public/images/hope.webp';
 import { KoHo } from 'next/font/google';
 const koho = KoHo({ subsets: ['latin'], weight: '600' });
 
@@ -35,9 +35,9 @@ export default function CTA(props: Props) {
         <div className="">
           <Image
             src={CTAImage}
-            width={515}
-            height={631}
-            className="w-full my-[50px]"
+            width={415}
+            height={431}
+            className="w-full rounded "
             alt="Mudança"
           />
         </div>

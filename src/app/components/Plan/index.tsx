@@ -19,18 +19,18 @@ export default function Plan(props: Props) {
       <div className="flex flex-col md:flex-row md:justify-between">
         <CardStep
           title="01."
-          subTitle="Avaliação"
-          text="O primeiro passo você já deu, chegou até aqui. Muito bem! Em sua primeira sessão já será possível estabelecer um vínculo com sua terapeuta. Fique à vontade, não existe um cronograma pronto para levar à terapia. Importante dizer que nesse espaço você não vai se deparar com críticas ou julgamentos. Independente de qual assunto seja tratado, estarei pronta para te acolher."
+          subTitle="Crie sua conta de forma humanizada"
+          text="Cadastre-se na plataforma CreditaRS fornecendo as informações básicas da sua empresa e criando suas credenciais de acesso."
         />
         <CardStep
           title="02."
-          subTitle="Tratamento"
-          text="A profissional vai escolher com muito cuidado as intervenções que serão feitas, vindo de encontro ao que você busca. É importante informar que esse trabalho será realizado em parceria: você e a terapeuta. Os avanços vão acontecer se você estiver disponível para o tratamento."
+          subTitle="Avalie sua saúde financeira"
+          text="Utilize o chatbot para realizar uma avaliação rápida da saúde financeira da sua empresa, gerando relatórios detalhados como fluxo de caixa e demonstração de resultados."
         />
         <CardStep
           title="03."
-          subTitle="Mudança"
-          text="É um processo cuidadoso onde cada passo será uma reconstrução que vai te propiciar novos olhares, emoções e comportamentos. Abra-se para o novo, viva o presente momento e prepare-se para o futuro moderadamente. Olhe atentamente para os passos que você já deu, perceba que hoje você vai estar mais perto do que ontem. Estarei no seu suporte!"
+          subTitle="Conecte-se com instituições financeiras"
+          text="Explore as opções de financiamento disponíveis, conecte-se com as instituições financeiras mais adequadas ao seu perfil e inicie o processo de solicitação de crédito diretamente pela plataforma."
         />
       </div>
       <div className="flex justify-center">
