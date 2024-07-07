@@ -19,7 +19,7 @@ function Login() {
     setIsLoading(true);
     try {
       // Simular chamada à API de login
-      await new Promise((resolve) => setTimeout(resolve, 3000)); // Substitua isso por sua chamada real à API
+      await new Promise((resolve) => setTimeout(resolve, 3000));
       router.push('formulario');
     } catch (error) {
       console.error('Login failed:', error);
