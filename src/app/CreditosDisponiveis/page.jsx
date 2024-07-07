@@ -1,3 +1,6 @@
+'use client';
+import { useState } from "react";
+import { useRouter } from 'next/navigation';
 import "./CreditosDisponiveis.css";
 
 const proposals = [
@@ -8,15 +11,33 @@ const proposals = [
 ];
 
 function CreditosDisponiveis() {
+    const router = useRouter();
+    const [isLoading, setIsLoading] = useState(false);
+
+    const handlerPerfil = async () => {
+        setIsLoading(true);
+        try {
+            // Simular chamada à API de login
+            await new Promise((resolve) => setTimeout(resolve, 3000));
+            router.push('meuPerfil');
+        } catch (error) {
+            console.error('Login failed:', error);
+        } finally {
+            setIsLoading(false);
+        }
+    };
+
     return (
         <main className="conteudo-principal">
-            <div>
-                Veja seu perfil
-            </div>
-
             <div className="content">
                 <header className="content-header">
-                    Melhor proposta para você
+                    Melhor proposta para você <p onClick={handlerPerfil} className="meuPerfil">
+                          {isLoading ? "loading...":"Meu perfil"}
+                
+
+
+
+                    </p>
                 </header>
 
                 <div className="box-content">
@@ -28,7 +49,7 @@ function CreditosDisponiveis() {
                     </div>
                     {proposals.map((item) => (
                         <div key={item.id} className="proposal-item">
-                            <div className="proposal-id"  >ID: {item.id}</div>
+                            <div className="proposal-id">ID: {item.id}</div>
                             <div className="proposal-rate">Taxa: {item.rate}</div>
                             <div className="proposal-description">Descrição: {item.description}</div>
                             <div className="proposal-payment">Pagamento: {item.payment}</div>

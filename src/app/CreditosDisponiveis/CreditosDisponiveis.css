@@ -2,9 +2,23 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   
+    align-items: center;
+    justify-content: center;
+    
+}
+.meuPerfil{
+    padding: 15px;
+    border: 1.5px solid rgba(0, 0, 0, 0.486);
+    border-radius: 15PX;
+    font-size: 1rem;
+    background-color: #FFCB47;
+    color: black;
+    transition: 0.5s;
+}
+.meuPerfil:hover{
+    background-color: #97CBAE;
+    cursor: pointer;
+  
 }
 
 
@@ -17,13 +31,17 @@
     border-right: 2px solid #eee;
     padding: 5px;
     
+    
 }
 
 .conteudo-principal .content-header{
+    display: flex;
     border-radius: 5px;
     max-width: 100%;
     padding: 30px;
     font-size: 2rem;
+    justify-content: space-between;
+    align-items: center;
     background-color: #FFCB47;
     
 }
