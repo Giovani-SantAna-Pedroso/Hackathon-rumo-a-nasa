@@ -33,6 +33,7 @@ const proposals = [
 function CreditosDisponiveis() {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
+<<<<<<< HEAD
 
   const handlerPerfil = async () => {
     setIsLoading(true);
@@ -47,6 +48,8 @@ function CreditosDisponiveis() {
     }
   };
 
+=======
+>>>>>>> 09b44ea75faf95c0c27f6232bb4d56d1336b82ca
   return (
     <main className="conteudo-principal">
       <div className="content">

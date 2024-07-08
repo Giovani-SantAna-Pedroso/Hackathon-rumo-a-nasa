@@ -29,9 +29,9 @@ export default function CTA(props: Props) {
           <p className="md:max-w-[34vw] text-text md:text-textM ">
             Descubra a ponte para a recuperação e crescimento das PMEs! Nossa
             solução tecnológica inovadora transforma o acesso ao crédito,
-            oferecendo as ferramentas e suporte necessários para que
-            empreendedores superem momentos críticos e reergam seus negócios.
-            Estamos prontos para ajudar você a alcançar o sucesso!
+            oferecendo as ferramentas e o suporte necessários para que
+            empreendedores superem momentos críticos e reconstruam seus
+            negócios. Estamos prontos para ajudar você a alcançar o sucesso!
           </p>
         </div>
         <div className="">
