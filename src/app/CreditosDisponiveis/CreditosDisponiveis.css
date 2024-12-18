@@ -1,111 +1,152 @@
-.conteudo-principal{
-    height: 100vh;
+/* Layout Principal */
+.conteudo-principal {
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    
-}
-.meuPerfil{
-    padding: 15px;
-    border: 1.5px solid rgba(0, 0, 0, 0.486);
-    border-radius: 15PX;
-    font-size: 1rem;
-    background-color: #FFCB47;
-    color: black;
-    transition: 0.5s;
-}
-.meuPerfil:hover{
-    background-color: #97CBAE;
-    cursor: pointer;
+    align-items: center;
+    background: linear-gradient(to bottom right, #FFCB47, #97CBAE);
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
   
-}
-
-
-.conteudo-principal .content{
-    width: 1000px;
-    height: 500px;
-    border-top:none;
-    border-bottom: 2px solid #eee;
-    border-left: 2px solid #eee;
-    border-right: 2px solid #eee;
-    padding: 5px;
-    
-    
-}
-
-@media (max-width:1043PX) {
-    .conteudo-principal{
-        height: 100vh;
-    }
-.conteudo-principal .content{
-width: 600px;
+  .content {
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
   
-}
-}
-@media (max-width:600PX) {
-    
-.conteudo-principal .content{
-width: 500px;
-  
-}
-}
-
-.conteudo-principal .content-header{
+  .content-header {
     display: flex;
-    border-radius: 5px;
-    max-width: 100%;
-    padding: 30px;
-    font-size: 2rem;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFCB47;
-    
-}
-.title-box-content{
-    display: flex;
-    margin-top: 25px;
-  justify-content: space-around;
-    
-
-}
-
-
-
-
-.content-header .box-content{
-   
-}
-.proposal-item{
-    display: flex;
-    justify-content: space-around;
-    
-    padding: 25px;
-    margin-top: 15px;
-    background-color: #eee;
-    border-radius: 5px;
-    transition: 0.5s;
-
-}
-.proposal-item:hover{
-    display: flex;
-    justify-content: space-around;
-    padding: 25px;
-    margin-top: 25px;
+    padding: 20px;
+    background: #FFCB47;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .content-header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .meuPerfil {
+    padding: 10px 20px;
+    background: #000;
     color: #fff;
-    background-color:#97CBAE;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
-   
-    scale: 1.05;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .meuPerfil:disabled {
+    cursor: not-allowed;
+    background: #ccc;
+  }
+  
+  .meuPerfil:hover:enabled {
+    background: #444;
+    transform: scale(1.05);
+  }
+  
+  .box-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .title-box-content {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    color: #333;
+  }
+  
+  .proposal-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .proposal-item:hover {
+    cursor: pointer;
 
-}
-.proposal-description{
-    max-width: 250px;
-}
-
-
-
-
-.proposal-item .item{
-
-}
+    background: #97CBAE;
+    color: #fff;
+    transform: scale(1.02);
+  }
+  
+  .proposal-id, .proposal-rate, .proposal-description, .proposal-payment {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .proposal-description {
+    max-width: 200px;
+    overflow-wrap: break-word;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .title-box-content, .proposal-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .content-header {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+  
+    .meuPerfil {
+      width: 100%;
+    }
+  }
+  /* Spinner de carregamento */
+.spinner {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+  
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    animation-delay: -1.0s;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+  

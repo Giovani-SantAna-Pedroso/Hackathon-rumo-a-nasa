@@ -1,73 +1,58 @@
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centralizar o dashboard no eixo horizontal */
-  padding: 2rem; /* Espaçamento interno */
-  background-color: #f7f9fc; /* Fundo claro */
-width: 100vh;
-  border-radius: 12px; /* Bordas arredondadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efeito de elevação */
-  border: 1px solid #e0e0e0; /* Borda sutil */
-  max-width: 1200px; /* Limita a largura do dashboard */
-  margin: 2rem auto; /* Centraliza o dashboard na tela */
+  align-items: center;
+  background-color: #f7f9fc;
+  padding: 2rem;
+  margin: auto;
+  max-width: 1900px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
 }
 
 .dashboardGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 colunas responsivas */
-  gap: 2rem; /* Espaçamento entre os itens */
-  width: 100%; /* Ocupa a largura total */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
 }
 
 .gridItem {
-  padding: 1.5rem; /* Espaçamento interno de cada gráfico */
-  background-color: white; /* Fundo branco */
-  border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Leve sombra */
-  border: 1px solid #d6d6d6; /* Borda */
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
 }
 
-.title {
-  font-size: 1.25rem; /* Tamanho maior para os títulos */
-  font-weight: bold; /* Negrito para os títulos */
+.gridItem:hover {
+  transform: translateY(-5px);
+}
+
+.chartTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 1rem;
-  color: #2c3e50; /* Títulos em tom escuro */
+}
+
+.containerBtn{
+  display: flex;
 }
 
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    padding: 1rem; /* Reduz o padding em telas menores */
-  }
-
-  .dashboardGrid {
-    width: 90%;
-    grid-template-columns: 1fr; /* Em telas menores, usa apenas 1 coluna */
-    gap: 1rem; /* Reduz o espaço entre os gráficos */
-  }
-
-  .gridItem {
-    padding: 1rem; /* Ajusta o padding interno */
-  }
-}
-
-@media (max-width: 750px) {
-  .container {
-    padding: 1rem; /* Reduz o padding em telas menores */
-    margin: 1rem; /* Reduz as margens laterais */
-  }
-
-  .dashboardGrid {
-    grid-template-columns: 1fr; /* Exibe apenas uma coluna */
-    gap: 1rem; /* Reduz o espaço entre os gráficos */
-  }
-
-  .gridItem {
-    padding: 1rem; /* Ajusta o padding interno */
-  }
-
   .title {
-    font-size: 1.1rem; /* Reduz o tamanho do título */
+    font-size: 1.5rem;
+  }
+
+  .dashboardGrid {
+    grid-template-columns: 1fr; /* Uma coluna em dispositivos menores */
   }
 }
