@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+
 import { Line } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -30,7 +31,7 @@ import styles from './Dash.module.css';
 // Configuração do ChartJS
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
-// Dados fictícios ajustados para o nicho de empréstimos
+// Dados fictícios
 const emprestimosData = [
   { regiao: 'Norte', emprestimos: 120, juros: 2.5 },
   { regiao: 'Nordeste', emprestimos: 230, juros: 2.0 },
@@ -71,15 +72,15 @@ export const Dashdados = () => (
     <div className={styles.dashboardGrid}>
       {/* Valores Mensais */}
       <div className={styles.gridItem}>
-        <h3 className={styles.title}>Valores Mensais de Empréstimos</h3>
-        <div style={{ width: '100%', height: '300px' }}>
+        <h3 className={styles.chartTitle}>Valores Mensais de Empréstimos</h3>
+        <ResponsiveContainer width="100%" height={300}>
           <Line data={lineData} options={{ responsive: true, maintainAspectRatio: false }} />
-        </div>
+        </ResponsiveContainer>
       </div>
 
       {/* Regiões com Mais Empréstimos */}
       <div className={styles.gridItem}>
-        <h3 className={styles.title}>Regiões com Mais Empréstimos</h3>
+        <h3 className={styles.chartTitle}>Regiões com Mais Empréstimos</h3>
         <ResponsiveContainer width="100%" height={300}>
           <BarChart data={emprestimosData}>
             <CartesianGrid strokeDasharray="3 3" />
@@ -94,7 +95,7 @@ export const Dashdados = () => (
 
       {/* Taxas de Juros */}
       <div className={styles.gridItem}>
-        <h3 className={styles.title}>Taxas de Juros por Região</h3>
+        <h3 className={styles.chartTitle}>Taxas de Juros por Região</h3>
         <ResponsiveContainer width="100%" height={300}>
           <BarChart data={emprestimosData}>
             <CartesianGrid strokeDasharray="3 3" />
@@ -109,7 +110,7 @@ export const Dashdados = () => (
 
       {/* Crédito por Estado */}
       <div className={styles.gridItem}>
-        <h3 className={styles.title}>Crédito Fornecido por Estado</h3>
+        <h3 className={styles.chartTitle}>Crédito Fornecido por Estado</h3>
         <ResponsiveContainer width="100%" height={300}>
           <PieChart>
             <Pie
