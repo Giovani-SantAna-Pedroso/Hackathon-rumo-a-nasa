@@ -12,10 +12,10 @@ const config: Config = {
       {
         mytheme: {
           primary: '#FFCB47',
-          secondary: '#ff4d6d',
+          secondary: '#ef0000',
           accent: '#590d22',
           neutral: '#23c',
-          'base-100': '#ffffff',
+          'base-100': '#dadada',
           info: '#3abff8',
           success: '#36d399',
           warning: '#fbbd23',
@@ -23,7 +23,7 @@ const config: Config = {
         },
       },
     ],
-    base: false,
+    base: true,
   },
 
   theme: {

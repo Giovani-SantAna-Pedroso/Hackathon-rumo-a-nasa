@@ -26,9 +26,13 @@ export default function Features() {
       </h1>
       {/*  AUTOESTIMA, Ansiedade , , , , , VIOLÊNCIA CONTRA A MULHER. */}
       <div className="flex flex-row flex-wrap justify-between">
-        <CardFeatures title="Análise Preditiva" icon={<FaUserTie />} />
-        <CardFeatures title="Suporte ao Cliente" icon={<FaPerson />} />
-        <CardFeatures title="Marketing Digital" icon={<FaGlobe />} />
+        <CardFeatures
+          title="Análise Preditiva"
+          text="Uso de IA usando interação mais humanizada e menos burocrática para avaliar rapidamente a saúde financeira das PMEs"
+          icon={<FaUserTie />}
+        />
+        <CardFeatures title="Suporte ao Cliente" text="" icon={<FaPerson />} />
+        <CardFeatures title="Facilidade de uso " text="" icon={<FaGlobe />} />
       </div>
     </div>
   );

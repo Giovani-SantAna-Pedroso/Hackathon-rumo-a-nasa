@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 };
 type Props = {
   title: string;
+  text: string;
   icon: any;
 };
 
@@ -22,7 +23,8 @@ export default function CardFeatures(props: Props) {
       className={`flex flex-row ${koho.className} items-center text-[24px] md:text-[20px] rounded-lg p-4 bg-terciary text-blackText-blackText mb-[20px] w-full md:w-[30%]`}
     >
       <div className="mr-4">{props.icon}</div>
-      {props.title}
+      <p>{props.title}</p>
+      <p>{props.text}</p>
     </motion.div>
   );
 }
