@@ -38,7 +38,7 @@ function CreditosDisponiveis() {
                 <div className="double-bounce2"></div>
               </div>
             ) : (
-              'Meu Perfil'
+              'Dashboard'
             )}
           </button>
         </header>

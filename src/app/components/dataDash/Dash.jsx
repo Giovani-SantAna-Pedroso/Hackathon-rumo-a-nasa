@@ -28,6 +28,8 @@ import {
 } from 'recharts';
 import styles from './Dash.module.css';
 
+import MapaBrasil from "../MapaBrasil/index.jsx"
+
 // Configuração do ChartJS
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
@@ -130,6 +132,8 @@ export const Dashdados = () => (
           </PieChart>
         </ResponsiveContainer>
       </div>
+      
+      <MapaBrasil/>
     </div>
   </div>
 );
