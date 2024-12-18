@@ -39,7 +39,7 @@ export default function Plan(props: Props) {
           <button
             className={`${koho2.className} btn btn-custon-1 bg-burnt text-white mr-10`}
           >
-            Quero fazer um emprestimo
+            Faça a sua avaliação
           </button>
         </Link>
       </div>

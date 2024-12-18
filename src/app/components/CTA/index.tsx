@@ -33,6 +33,26 @@ export default function CTA(props: Props) {
             empreendedores superem momentos críticos e reconstruam seus
             negócios. Estamos prontos para ajudar você a alcançar o sucesso!
           </p>
+          <div className="mt-2 flex flex-row ">
+            <Image
+              alt="ods 8"
+              width={150}
+              height={150}
+              src="/images/ods_08.webp"
+            />
+            <Image
+              alt="ods 9"
+              width={150}
+              height={150}
+              src="/images/ods_09.webp"
+            />
+            <Image
+              alt="ods 10"
+              width={150}
+              height={150}
+              src="/images/ods_10.webp"
+            />
+          </div>
         </div>
         <div className="">
           <Image
@@ -49,7 +69,7 @@ export default function CTA(props: Props) {
           <button
             className={`${koho2.className} btn btn-custon-1 bg-burnt text-white mr-10`}
           >
-            Quero fazer um emprestimo
+            Faça a sua avaliação
           </button>
         </Link>
       </div>

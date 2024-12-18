@@ -5,6 +5,7 @@ import {
   FaRegSadCry,
   FaUserInjured,
 } from 'react-icons/fa';
+import { BsGraphUp } from 'react-icons/bs';
 import { BiDice1, BiSad, BiFemaleSign, BiHappyBeaming } from 'react-icons/bi';
 import { MdSelfImprovement } from 'react-icons/md';
 import { RiPsychotherapyLine } from 'react-icons/ri';
@@ -31,8 +32,21 @@ export default function Features() {
           text="Uso de IA usando interação mais humanizada e menos burocrática para avaliar rapidamente a saúde financeira das PMEs"
           icon={<FaUserTie />}
         />
-        <CardFeatures title="Suporte ao Cliente" text="" icon={<FaPerson />} />
-        <CardFeatures title="Facilidade de uso " text="" icon={<FaGlobe />} />
+        <CardFeatures
+          title="Suporte ao Cliente"
+          text=" Nosso suporte usa Inteligencia artificial generativa para trazer em outro nivel a interação com nosso cliente, trazendo facilidade a quem nao entende muito de tecnologia."
+          icon={<FaPerson />}
+        />
+        <CardFeatures
+          title="Conexão com Instituições Financeiras Confiáveis"
+          text=" Conectar empreendedores com as melhores opções de financiamento com base no perfil financeiro de suas empresas"
+          icon={<FaGlobe />}
+        />
+        <CardFeatures
+          title="Dashboards Personalizados"
+          text="Fornecimento de dashboards detalhados que oferecem insights financeiros cruciais para tomada de decisões informadas."
+          icon={<BsGraphUp />}
+        />
       </div>
     </div>
   );

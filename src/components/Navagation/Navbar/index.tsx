@@ -12,7 +12,7 @@ type Props = {};
 // green to yellow
 export default function Navbar(props: Props) {
   let linksNav = [
-    { name: 'Home', link: '/', sub: [] },
+    { name: 'Home', link: '/#omv', sub: [] },
     { name: 'Meu Perfil', link: '/CreditosDisponiveis', sub: [] },
     { name: 'Dashboard', link: '/meuPerfil', sub: [] },
     // { name: "Psicologia forense", link: "/psicologia-forense"},
@@ -82,7 +82,7 @@ export default function Navbar(props: Props) {
           </ul>
         </div>
         {/* Logo */}
-        <Link className="btn btn-ghost normal-case text-xl" href="/">
+        <Link className="btn btn-ghost normal-case text-xl" href="/#omv">
           <Logo />
         </Link>
       </div>

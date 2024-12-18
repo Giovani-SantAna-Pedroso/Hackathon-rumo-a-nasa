@@ -37,7 +37,8 @@ export default function Hero() {
           <div className="w-full">
             <h1 className="mb-5 text-5xl font-bold">Auxílio sem empecilho</h1>
             <p className="mb-5">
-              Você enfrenta desafios econômicos que comprometem a recuperação.
+              Você enfrenta desafios econômicos que comprometem a recuperação?
+              <br />
               Nós facilitamos o acesso ao crédito para PMEs, oferecendo o
               conhecimento e os recursos essenciais para você reconstruir e
               prosperar. Junte-se a nós e reergue seu empreendimento com
