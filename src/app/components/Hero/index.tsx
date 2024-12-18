@@ -32,8 +32,8 @@ export default function Hero() {
       }}
     >
       <div className="hero-overlay bg-blackText bg-opacity-40 p-0"></div>
-      <div className="hero-content text-neutral-content h-full text-center p-0">
-        <div className="flex flex-row h-full items-center   justify-between ">
+      <div className="hero-content text-neutral-content   h-full text-center p-0">
+        <div className="flex flex-col-reverse  md:p-0 md:flex-row h-full items-center   justify-between ">
           <div className="w-full">
             <h1 className="mb-5 text-5xl font-bold">Auxílio sem empecilho</h1>
             <p className="mb-5">
@@ -45,7 +45,7 @@ export default function Hero() {
               confiança!
             </p>
           </div>
-          <div className="flex flex-col justify-center w-full border-l bg-opacity-30 h-full  bg-gray-300">
+          <div className="flex flex-col mb-14 md:mb-0  justify-center w-full border-b md:border-b-0 md:border-l bg-opacity-30 h-full  bg-gray-300">
             <form className="  p-4 rounded-md">
               <h1
                 className={`${koho.className} text-title font-koho font-medium text-white  leading-title mb-[60px]`}

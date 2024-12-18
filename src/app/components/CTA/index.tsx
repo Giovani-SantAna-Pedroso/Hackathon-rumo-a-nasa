@@ -24,7 +24,7 @@ export default function CTA(props: Props) {
       >
         A mudanca esta a apenas um passo
       </h1>
-      <div className="flex flex-col-reverse md:flex-row justify-between">
+      <div className="flex  flex-col-reverse md:flex-row justify-between">
         <div>
           <p className="md:max-w-[34vw] text-text md:text-textM ">
             Descubra a ponte para a recuperação e crescimento das PMEs! Nossa
@@ -33,7 +33,7 @@ export default function CTA(props: Props) {
             empreendedores superem momentos críticos e reconstruam seus
             negócios. Estamos prontos para ajudar você a alcançar o sucesso!
           </p>
-          <div className="mt-2 flex flex-row ">
+          <div className="my-2 flex flex-row ">
             <Image
               alt="ods 8"
               width={150}
