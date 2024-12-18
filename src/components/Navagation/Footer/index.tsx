@@ -20,7 +20,7 @@ const pages = [
 ];
 const contactInfo = { email: 'creditars@email.com', tel: '(00)00000-0000' };
 const creator = {
-  name: 'Giovani, Welme, Tarug, Vieira',
+  name: 'Giovani, Pedro, Tarug, Vieira',
   link: 'https://github.com/Giovani-Pedroso/Hackathon-rumo-a-nasa',
 };
 
@@ -78,58 +78,3 @@ export default function Footer(props: Props) {
     </>
   );
 }
-
-/*
-    <footer className=" bg-primary text-white p-footerM md:p-footer">
-      <div className="flex flex-col md:flex-row justify-between">
-        <div className="mb-4 md:mb-0 md:w-[40%] flex flex-col">
-          <h1 className="text-[22px]  mb-6">Clinica EficazMente</h1>
-          <p className="">
-            Buscando a excelência com afinco e contribuindo para o aprimoramento
-            e o desenvolvimento de pessoas.{" "}
-          </p>
-        </div>
-        <div className="mb-4 md:mb-0 ">
-          <h1 className="text-[22px] mb-6">Páginas</h1>
-          <div>
-            <div className=" my-1">
-              <Link href={context.homeAddress}>Home</Link>
-            </div>
-            <div className=" my-1">
-              <Link href="about">Sobre mim</Link>
-            </div>
-            <div className=" my-1">
-              <Link href="contact">Contato</Link>
-            </div>
-            {/* <div className=" mb-1">
-                <Link href="blog">Blog</Link>
-                </div>
-                <div className=" mb-1">
-                <Link href="testes">Testes</Link>
-                </div> */
-
-/*}
-
-          </div>
-        </div>
-        <div className="">
-          <h1 className="text-[22px] mb-6">Contato</h1>
-          <p className="flex items-center mb-1">
-            <AiOutlineWhatsApp className="mr-4" /> 11 97523-7471
-          </p>
-          <p className="flex items-center  mb-1">
-            <AiOutlineMail className="mr-4" /> clinicaeficazmente@gmail.com
-          </p>
-        </div>
-      </div>
-      <div className="mt-6">
-        <p>©Copyright Cleide SantAna {year}. Todos os direitos reservados.</p>
-        <p>
-          Website developed by{" "}
-          <a href="https://giovanisfpv.com.br" className="underline">
-            Giovani SFPV
-          </a>
-        </p>
-      </div>
-    </footer>
- */

@@ -28,7 +28,7 @@ export default function Features() {
       <div className="flex flex-row flex-wrap justify-between">
         <CardFeatures title="Análise Preditiva" icon={<FaUserTie />} />
         <CardFeatures title="Suporte ao Cliente" icon={<FaPerson />} />
-        <CardFeatures title="Marketing Digital" icon={<FaGlobe />} />
+        <CardFeatures title="Facilidade de uso " icon={<FaGlobe />} />
       </div>
     </div>
   );
