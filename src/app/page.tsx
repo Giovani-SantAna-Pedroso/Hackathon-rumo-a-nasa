@@ -24,8 +24,8 @@ export default function Home() {
       <Features />
       {/* <Reviews /> */}
       {/* </SectionWImage> */}
-      <FAQ />
       <CTA />
+      <FAQ />
       {/* <Contato /> */}
     </div>
   );

@@ -1,6 +1,7 @@
 'use client';
 
 import { AiOutlineWhatsApp } from 'react-icons/ai';
+import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 import Link from 'next/link';
 import HerImg from '@public/hero-placerholder.png';
 import { KoHo, Encode_Sans } from 'next/font/google';
