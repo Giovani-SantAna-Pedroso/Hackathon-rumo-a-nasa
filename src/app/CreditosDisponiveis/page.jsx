@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { BsGraphUp } from 'react-icons/bs';
 
 import { Line } from 'react-chartjs-2';
 import {
@@ -114,7 +115,7 @@ function CreditosDisponiveis() {
           <h1>Melhores propostas para você</h1>
           <button
             onClick={handlerPerfil}
-            className="meuPerfil"
+            className=" border border-black p-2 rounded-md"
             disabled={isLoading}
           >
             {isLoading ? (
@@ -123,7 +124,9 @@ function CreditosDisponiveis() {
                 <div className="double-bounce2"></div>
               </div>
             ) : (
-              'Dashboard'
+              <span className="flex items-center">
+                <BsGraphUp className="mr-2" /> Dashboard
+              </span>
             )}
           </button>
         </header>
